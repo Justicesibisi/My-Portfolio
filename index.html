@@ -3,415 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Justice Sibisi | Software Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Justice Sibisi</div>
-        <div>
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li> 
-              <li><a href="#experience">Experience</a></li> 
-              <li><a href="#projects">Projects</a></li> 
-              <li><a href="#contact">Contact</a></li> 
 
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Justice Sibisi</div>
-      <div class="hamburger-menu">
+<nav id="desktop-nav">
+    <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Justice Sibisi</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<nav id="hamburger-nav">
+    <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Justice Sibisi</div>
+    <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li> 
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+        <div class="menu-links" id="mobile-menu">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Untitled design (3).png" alt="Justice Sibisi profile picture" /
-        >
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Justice Sibisi</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button 
-          class="btn btn-color-2" 
-          onclick="window.open('./assets/Justice_Sibisi CV.pdf')"
-          >Download CV</button>
-          <button 
-          class="btn btn-color-1" 
-          onclick="location.href='./#contact'"
-          >Contact Info</button>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="hero-inner">
+        <div class="hero-img-wrap">
+            <img src="./assets/Untitled design (3).png" alt="Justice Sibisi" />
         </div>
-        <div id="socials-container"></div>
-        <img src="./assets/linkedin.png" 
-        alt="My LinkedIn profile"
-        class="icon" 
-        onclick="window.open('https:/www.linkedin.com/in/nojomo-justice-sibisi-547017141', '_blank')">
-        
-        <img src="./assets/github.png" 
-        alt="My Github profile"
-        class="icon" 
-        onclick="window.open('https:/github.com/Justicesibisi', '_blank')">
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get to know more</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="experince icon" class="icon"/>
-              <h3>Experience</h3>
-              <p>2+ year <br />Software Developer</p>
+        <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Justice Sibisi</h1>
+            <p class="hero-role"><span>.NET</span> &amp; <span>Laravel</span> Software Developer</p>
+            <div class="hero-btns">
+                <button class="btn btn-primary" onclick="window.open('./assets/Justice_Sibisi CV.pdf', '_blank')">Download CV</button>
+                <button class="btn btn-outline" onclick="location.href='#contact'">Contact Me</button>
             </div>
-              <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              ALX Software Engineering Certificate<br />Oracle Certified Associate JAVA SE <br />IT Varsity FullStack Development Certificate 
-              <br />Microsoft Certified: Azure Fundamentals <br />Microsoft Certified: Developer Associate </p>
+            <div class="hero-socials">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/nojomo-justice-sibisi-547017141/', '_blank')">
+                <img src="./assets/github.png" alt="GitHub" class="icon"
+                    onclick="window.open('https://github.com/Justicesibisi', '_blank')">
             </div>
-          </div>
-            <div class="text-container">
-           <p>
-  I’m a software developer based in Johannesburg, South Africa. I build reliable and scalable applications across web and backend platforms. I’m a graduate of ALX Software Engineering and IT Varsity Full Stack Development. I’m also Oracle Java certified and Microsoft Certified.
-</p>
-
-<p>
-  I work mainly with .NET, C#, Laravel, Java, JavaScript, React, and Node.js. I’ve worked as a Software Developer at Ecoosty where I built and improved authentication systems, handled UI migrations, and worked on form logic using Laravel Livewire. I’ve also worked on private and enterprise projects that can’t be shared publicly but gave me solid real-world experience.
-</p>
-
-<p>
-  I care about writing clean code and solving real problems. When I’m not coding, I enjoy learning new technologies, gaming, and keeping up with the tech space. I work well in teams and I’m always looking to grow as a developer.
-</p>
-
-      </div>
-      </div>
-      </div>
+        </div>
     </div>
-    </div>
-  </section>
-      <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#experience'"
-    />
-  </section>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <section id="experience" >
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container">
-      <h2 class="experience-sub-title">Frontend Development</h2>
-      <div class="article-container">
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>HTML</h3>
-          <p>Experienced</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>CSS</h3>
-          <p>Experienced</p>
-        </div>
-        </article>
-      
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>   Alpinejs</h3>
-          <p>Intermediate</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>Javascript</h3>
-          <p>Basic</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>TailwindCSS</h3>
-          <p>Intermediate</p>
-        </div>
-        </article>
-      </div>
-      </div>
-      <div class="details-container">
-      <h2 class="experience-sub-title">Backend Development</h2>
-      <div class="article-container">
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>SQL Server</h3>
-          <p>Basic</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>Node JS</h3>
-          <p>Intermediate</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>   Laravel / PHP</h3>
-          <p>    Experinced</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>ASP.NET</h3>
-          <p>Intermediate</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>JAVA </h3>
-          <p>Intermediate</p>
-        </div>
-        </article>
-        <article>
-        <img
-          src="./assets/checkmark.png"
-          alt="Experience icon"
-          class="icon"
-        />
-        <div>
-          <h3>Git</h3>
-          <p>Experinced</p>
-        </div>
-        </article>
-      </div>
-      </div>
-    </div>
-    </div>
-    <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'"
-    />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container color-container">
-      <div class="article-container">
-        <img
-        src="./assets/Movie E-Recpmmandation.png"
-        alt="Movie Recommendation Project"
-        class="project-img"
-        />
-      </div>
-      <h2 class="experience-sub-title project-title">Movie E-Recommendation</h2>
-      <div class="btn-container">
-        <button
-        class="btn btn-color-2 project-btn"
-        onclick="window.open('https:/github.com/Justicesibisi/Movie-E-Recommendation.git')"
-        >
-        Github
-        </button>
-        <button
-        class="btn btn-color-2 project-btn"
-        onclick="window.open('https://movie-e-recommendation.web.app')"
-        >
-        Live Demo
-        </button>
-      </div>
-      </div>
-      <div class="details-container color-container">
-      <div class="article-container">
-        <img
-        src="./assets/MyLifeApp.png"
-        alt="Project 2"
-        class="project-img"
-        onclick="expandImage(this)"
-        />
-        
-      </div>
-      <h2 class="experience-sub-title project-title">My Life App</h2>
-      <div class="btn-container">
-        <button
-        class="btn btn-color-2 project-btn"
-        onclick="window.open('https:/github.com/Justicesibisi/MyLifeWebApp.git')"
-        >
-        Github
-        </button>
-        <button
-        class="btn btn-color-2 project-btn"
-        onclick="window.open('https:/my-life-52025.firebaseapp.com/')"
-        >
-        Live Demo
-        
-        </button>
-      </div>
-      </div>
+</section>
 
-       <div class="details-container color-container">
-      <div class="article-container">
-        <img
-        src="./assets/OneKey.png"
-        alt="Project 2"
-        class="project-img"
-        onclick="expandImage(this)"
-        />
-        
-      </div>
-      <h2 class="experience-sub-title project-title">OneKey Bags</h2>
-      <div class="btn-container">
-        <button
-        class="btn btn-color-2 project-btn"
-        onclick="window.open('https:/github.com/Justicesibisi/onekeybags-frontend')"
-        >
-        Github
-        </button>
-        <button
-        class="btn btn-color-2 project-btn"
-        onclick="window.open('https:/onekeybags.netlify.app/')"
-        >
-        Live Demo
-        
-        </button>
-      </div>
-      </div>
-    
-    </div>
-    <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#contact'"
-    />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img
-      src="./assets/email.png"
-      alt="Email icon"
-      class="icon contact-icon email-icon"
-      />
-      <p><a href="mailto:justicesibisi@outlook.com">justicesibisi@outlook.com</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img
-      src="./assets/linkedin.png"
-      alt="LinkedIn icon"
-      class="icon contact-icon"
-      />
-      <p><a href="https://www.linkedin.com/in/nojomo-justice-sibisi-547017141/" onclick="window.open('https://www.linkedin.com/in/nojomo-justice-sibisi-547017141/')">LinkedIn</a></p>
-      <br/>
-
-      <div class="contact-info-container">
-      <img
-      src="./assets/phone-call.png"
-      alt="WhatsApp icon"
-      class="icon contact-icon"
-      />
-  <p>
-  <a href="https://wa.me/27693898541" target="_blank">0693898541</a>
-  </p>
-</div>
-          <button 
-          class="btn btn-color-2" 
-          onclick="window.open('./assets/Justice_Sibisi CV.pdf')"
-          >Download CV</button>
+<section id="about">
+    <p class="section-label">Get to know more</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>I am a software developer based in <strong>Johannesburg, South Africa</strong> with hands-on commercial experience building enterprise-grade web applications. I specialise in <strong>.NET (C#, ASP.NET MVC)</strong> and <strong>Laravel (PHP, Livewire)</strong> with exposure to React and Firebase on the frontend.</p>
+            <p>I transitioned into software development from a financial services background, bringing strong analytical thinking, client communication and documentation skills into everything I build. Every role I have held has been real, commercial and production-facing.</p>
+            <p>I am <strong>Oracle Certified Java SE 8 Programmer</strong> and <strong>Microsoft Azure Fundamentals (AZ-900)</strong> certified. I completed the ALX Africa Software Engineering programme and IT Varsity Full Stack Development course through self-driven commitment while working full time.</p>
+            <p>I care about clean, maintainable code, honest communication and solving real problems. When I am not coding I enjoy learning new technologies and keeping up with the SA tech space.</p>
         </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <div class="about-cards">
+            <div class="about-card">
+                <div class="about-card-header">
+                    <img src="./assets/experience.png" alt="Experience" class="icon" />
+                    <h3>Experience</h3>
+                </div>
+                <p>2+ years of commercial software development across enterprise .NET systems, Laravel applications and full-stack React projects.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-header">
+                    <img src="./assets/education.png" alt="Education" class="icon" />
+                    <h3>Education</h3>
+                </div>
+                <p>ALX Africa Software Engineering · IT Varsity Full Stack Development · Oracle Certified Java SE 8 · Microsoft AZ-900 · Power Platform (In Progress)</p>
+            </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2026 Justice Sibisi. All Rights Reserved.</p>
-    </footer>
+    </div>
+</section>
 
-   <script>src="script.js"</script> 
+<section id="experience">
+    <p class="section-label">Where I've Worked</p>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <div>
+                    <div class="timeline-role">Software Developer</div>
+                    <div class="timeline-company">Speccon</div>
+                </div>
+                <div class="timeline-meta">
+                    <span class="timeline-date">January 2026 – Present</span>
+                    <span class="timeline-location">Remote</span>
+                    <span class="timeline-badge current">Current</span>
+                </div>
+            </div>
+            <ul class="timeline-bullets">
+                <li>Building a full-stack course tracking system using React and Firebase Firestore to manage a catalogue of 300+ tech courses.</li>
+                <li>Developed role-based access control supporting five user roles including Admins, Course Managers, Content Developers, Reviewers and Viewers.</li>
+                <li>Designed Firestore database schema to store course content including introductions, unit descriptions, questions and answers per unit.</li>
+                <li>Integrated SharePoint URL references for media assets keeping Firebase lean while maintaining full resource traceability.</li>
+                <li>Built a dashboard to surface missing course components and track progress per course from idea stage through to final delivery.</li>
+                <li>Implemented LMS conversion pipeline tracking monitoring migration progress from Moodle to a custom platform.</li>
+            </ul>
+            <div class="timeline-tags">
+                <span class="tag">React</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Firestore</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">RBAC</span>
+                <span class="tag">Google Sheets API</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <div>
+                    <div class="timeline-role">Software Developer (.NET Consultant)</div>
+                    <div class="timeline-company">Sampra</div>
+                </div>
+                <div class="timeline-meta">
+                    <span class="timeline-date">September 2025 – December 2025</span>
+                    <span class="timeline-location">Remote / Johannesburg</span>
+                    <span class="timeline-badge contract">Contract</span>
+                </div>
+            </div>
+            <ul class="timeline-bullets">
+                <li>Engineered workflow modules for asset requests, approvals and incident reporting using ASP.NET MVC clean architecture.</li>
+                <li>Built multi-role access control for Employees, Managers, Administrators, Finance and HR with secure C# backend and API endpoints.</li>
+                <li>Optimised SQL stored procedures improving data retrieval performance by 40%.</li>
+                <li>Built Razor Pages with DataTables, server-fetched JSON data and export options for audit-ready reporting.</li>
+                <li>Documented system features, data models and controller endpoints to streamline developer onboarding.</li>
+            </ul>
+            <div class="timeline-tags">
+                <span class="tag">C#</span>
+                <span class="tag">ASP.NET MVC</span>
+                <span class="tag">.NET Core</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Razor Pages</span>
+                <span class="tag">REST APIs</span>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <div>
+                    <div class="timeline-role">Software Developer</div>
+                    <div class="timeline-company">Ecoosty</div>
+                </div>
+                <div class="timeline-meta">
+                    <span class="timeline-date">March 2025 – August 2025</span>
+                    <span class="timeline-location">Woodmead, South Africa</span>
+                </div>
+            </div>
+            <ul class="timeline-bullets">
+                <li>Implemented Laravel Livewire authentication flows including password reset logic and real-time form handling.</li>
+                <li>Migrated legacy UI components to a fully responsive utility-first design system while preserving controller functionality.</li>
+                <li>Ensured cross-device compatibility and maintained clean component-driven fullstack code following modern Laravel conventions.</li>
+                <li>Collaborated on form-based features with server-side validation and Livewire reactive updates.</li>
+            </ul>
+            <div class="timeline-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Livewire</span>
+                <span class="tag">TailwindCSS</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <p class="section-label">What I Work With</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-card-title">Backend Development</div>
+            <div class="skill-list">
+                <span class="skill-pill">C#</span>
+                <span class="skill-pill">ASP.NET MVC</span>
+                <span class="skill-pill">.NET Core</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">Laravel</span>
+                <span class="skill-pill">Livewire</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">REST APIs</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-card-title">Frontend Development</div>
+            <div class="skill-list">
+                <span class="skill-pill">React</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">TailwindCSS</span>
+                <span class="skill-pill">Razor Pages</span>
+                <span class="skill-pill">Alpine.js</span>
+                <span class="skill-pill">DataTables</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-card-title">Database</div>
+            <div class="skill-list">
+                <span class="skill-pill">SQL Server</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">Firebase Firestore</span>
+                <span class="skill-pill">Stored Procedures</span>
+                <span class="skill-pill">Query Optimisation</span>
+                <span class="skill-pill">Entity Framework</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-card-title">Cloud & DevOps</div>
+            <div class="skill-list">
+                <span class="skill-pill">Microsoft Azure</span>
+                <span class="skill-pill">Azure DevOps</span>
+                <span class="skill-pill">Firebase</span>
+                <span class="skill-pill">Git</span>
+                <span class="skill-pill">GitHub</span>
+                <span class="skill-pill">Shell Scripting</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-card-title">Methodologies & Tools</div>
+            <div class="skill-list">
+                <span class="skill-pill">Agile / Scrum</span>
+                <span class="skill-pill">Clean Architecture</span>
+                <span class="skill-pill">OOP</span>
+                <span class="skill-pill">MVC</span>
+                <span class="skill-pill">RBAC</span>
+                <span class="skill-pill">Microsoft 365</span>
+                <span class="skill-pill">SharePoint</span>
+                <span class="skill-pill">Technical Documentation</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-card-title">Soft Skills</div>
+            <div class="skill-list">
+                <span class="skill-pill">Analytical Thinking</span>
+                <span class="skill-pill">Stakeholder Communication</span>
+                <span class="skill-pill">Problem Solving</span>
+                <span class="skill-pill">Self-Management</span>
+                <span class="skill-pill">Teamwork</span>
+                <span class="skill-pill">Documentation</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <p class="section-label">Browse My Recent</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="./assets/Movie E-Recpmmandation.png" alt="Movie Recommendation" class="project-img" />
+            <div class="project-body">
+                <h3 class="project-title">Movie E-Recommendation</h3>
+                <p class="project-desc">A web app that recommends movies based on user preferences. Built with React and Firebase.</p>
+                <div class="project-btns">
+                    <button class="btn btn-outline btn-sm" onclick="window.open('https://github.com/Justicesibisi/Movie-E-Recommendation.git', '_blank')">Github</button>
+                    <button class="btn btn-primary btn-sm" onclick="window.open('https://movie-e-recommendation.web.app', '_blank')">Live Demo</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/MyLifeApp.png" alt="My Life App" class="project-img" />
+            <div class="project-body">
+                <h3 class="project-title">My Life App</h3>
+                <p class="project-desc">A personal productivity web application built with React and Firebase for tracking daily life tasks.</p>
+                <div class="project-btns">
+                    <button class="btn btn-outline btn-sm" onclick="window.open('https://github.com/Justicesibisi/MyLifeWebApp.git', '_blank')">Github</button>
+                    <button class="btn btn-primary btn-sm" onclick="window.open('https://my-life-52025.firebaseapp.com/', '_blank')">Live Demo</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/OneKey.png" alt="OneKey Bags" class="project-img" />
+            <div class="project-body">
+                <h3 class="project-title">OneKey Bags</h3>
+                <p class="project-desc">An e-commerce frontend for a bag brand featuring product listings and a responsive shopping interface.</p>
+                <div class="project-btns">
+                    <button class="btn btn-outline btn-sm" onclick="window.open('https://github.com/Justicesibisi/onekeybags-frontend', '_blank')">Github</button>
+                    <button class="btn btn-primary btn-sm" onclick="window.open('https://onekeybags.netlify.app/', '_blank')">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certifications">
+    <p class="section-label">Credentials</p>
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid">
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>Microsoft AZ-900</h4>
+                <p>Azure Fundamentals · 2025</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>Oracle Certified Associate</h4>
+                <p>Java SE 8 Programmer · 2024</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>ALX Africa</h4>
+                <p>Software Engineering Certificate · 2025</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>IT Varsity</h4>
+                <p>Full Stack Development · 2025</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>Driver's License</h4>
+                <p>Code C1 · 2018</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>Power Platform</h4>
+                <p>In Progress · 2026</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>Microsoft AZ-204</h4>
+                <p>Developing Solutions for Azure · In Progress · 2026</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./assets/education.png" alt="cert" class="icon" />
+            <div class="cert-info">
+                <h4>Kubernetes and Cloud Native Essentials (LFS250)</h4>
+                <p>Linux Foundation · In Progress · 2026</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-box">
+        <p>I am open to developer roles, contracts and learnerships in Johannesburg and remote. Feel free to reach out directly.</p>
+        <div class="contact-links">
+            <a href="mailto:justicesibisi@outlook.com" class="contact-link">
+                <img src="./assets/email.png" alt="Email" class="icon contact-icon" />
+                <span>justicesibisi@outlook.com</span>
+            </a>
+            <a href="https://wa.me/27693898541" target="_blank" class="contact-link">
+                <img src="./assets/phone-call.png" alt="Phone" class="icon contact-icon" />
+                <span>069 389 8541</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nojomo-justice-sibisi-547017141/" target="_blank" class="contact-link">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/Justicesibisi" target="_blank" class="contact-link">
+                <img src="./assets/github.png" alt="GitHub" class="icon contact-icon" />
+                <span>GitHub Profile</span>
+            </a>
+        </div>
+        <button class="btn btn-primary" onclick="window.open('./assets/Justice_Sibisi CV.pdf', '_blank')">Download CV</button>
+    </div>
+</section>
+
+<footer>
+    <div class="logo">Justice Sibisi</div>
+    <p>Copyright &#169; 2026 Justice Sibisi. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
