@@ -4,7 +4,7 @@ A responsive, high-performance web portfolio highlighting my commercial experien
 
 ## Live Access
 You can access the live portfolio site here:
-**[https://justicesibisi.github.io/](https://justicesibisi.github.io/)**
+**[https://justicesibisi.github.io/My-Portfolio/](https://justicesibisi.github.io/My-Portfolio/)**
 
 ## Stack & Features
 - HTML5 & Custom CSS3 with dynamic gradients and frosted glassmorphism.
